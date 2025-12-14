@@ -1,0 +1,9 @@
+os     , alg            , mean_rss_mib       , sd_rss_mib           , min_rss_mib, max_rss_mib
+Linux  , linear_scan    , 10.8834            , 0.03978888733749152  ,      10.777,      10.91
+Linux  , log_halving    ,  3.2670000000000003, 0.03013672547278867  ,       3.191,       3.285
+Linux  , mergesort      , 10.9413            , 0.09419843122071804  ,      10.836,      11.062
+Linux  , quadratic_bench,  3.2374            , 0.05927187828604356  ,       3.09 ,       3.285
+Windows, linear_scan    , 12.373000000000001 , 0.004320493798937788 ,      12.367,      12.379
+Windows, log_halving    ,  4.7338000000000005, 0.005750362307426156 ,       4.723,       4.742
+Windows, mergesort      , 14.3326            , 0.5047136041580638   ,      13.371,      14.578
+Windows, quadratic_bench,  4.758             , 0.0026666666666666813,       4.754,       4.762

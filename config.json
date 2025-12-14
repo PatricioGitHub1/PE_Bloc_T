@@ -1,0 +1,30 @@
+{
+  "algos": [
+    {
+      "name": "linear_scan",
+      "bin": "linear_scan",
+      "complexity": "O(n)",
+      "ns": [2000000]
+    },
+    {
+      "name": "mergesort",
+      "bin": "mergesort",
+      "complexity": "O(n log n)",
+      "ns": [1000000]
+    },
+    {
+      "name": "quadratic_bench",
+      "bin": "quadratic_bench",
+      "complexity": "O(n^2)",
+      "ns": [4000]
+    },
+    {
+      "name": "log_halving",
+      "bin": "log_halving",
+      "complexity": "O(log n)",
+      "ns": [1000000000]
+    }
+  ],
+  "reps": 5,
+  "seed_master": 123456789
+}

@@ -1,0 +1,33 @@
+os     , alg            , n         , wall_ms
+Linux  , linear_scan    ,       4000,    
+Linux  , linear_scan    ,    1000000,    
+Linux  , linear_scan    ,    2000000,  17.386400000000002
+Linux  , linear_scan    , 1000000000,    
+Linux  , log_halving    ,       4000,    
+Linux  , log_halving    ,    1000000,    
+Linux  , log_halving    ,    2000000,    
+Linux  , log_halving    , 1000000000,  25.913099999999996
+Linux  , mergesort      ,       4000,    
+Linux  , mergesort      ,    1000000,  78.9245
+Linux  , mergesort      ,    2000000,    
+Linux  , mergesort      , 1000000000,    
+Linux  , quadratic_bench,       4000,  25.4868
+Linux  , quadratic_bench,    1000000,    
+Linux  , quadratic_bench,    2000000,    
+Linux  , quadratic_bench, 1000000000,    
+Windows, linear_scan    ,       4000,    
+Windows, linear_scan    ,    1000000,    
+Windows, linear_scan    ,    2000000,  18.2053
+Windows, linear_scan    , 1000000000,    
+Windows, log_halving    ,       4000,    
+Windows, log_halving    ,    1000000,    
+Windows, log_halving    ,    2000000,    
+Windows, log_halving    , 1000000000,  23.537399999999998
+Windows, mergesort      ,       4000,    
+Windows, mergesort      ,    1000000, 116.8824
+Windows, mergesort      ,    2000000,    
+Windows, mergesort      , 1000000000,    
+Windows, quadratic_bench,       4000,  26.292700000000004
+Windows, quadratic_bench,    1000000,    
+Windows, quadratic_bench,    2000000,    
+Windows, quadratic_bench, 1000000000,    
