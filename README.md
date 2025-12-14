@@ -1,7 +1,7 @@
-﻿# BlocT_FuckPE
+﻿# BlocT PE
 - `temp_c`: Temperatura instantània reportada pel sensor (Windows WMI / `sensors` a Linux)
 
-Sistema d'automatitzaciÃ³ per benchmark d'algorismes amb esquema ABBA, cross-platform (Linux i Windows).
+Sistema d'automatitzacio per benchmark d'algorismes amb esquema ABBA, cross-platform (Linux i Windows).
 
 ## Estructura del projecte
 
@@ -35,7 +35,7 @@ sudo apt install build-essential cmake jq python3
 - CMake >= 3.20
 - PowerShell
 
-## CompilaciÃ³
+## Compilacio
 
 ### Linux
 ```bash
@@ -51,7 +51,7 @@ cmake .. -G "MinGW Makefiles"
 cmake --build . -j
 ```
 
-## ConfiguraciÃ³
+## Configuracio
 
 Edita `config.json` per definir els experiments:
 
@@ -73,7 +73,7 @@ Edita `config.json` per definir els experiments:
 - **seed_master**: llavor base per generar els seeds aparellats entre plataformes.
 
 
-## ExecuciÃ³
+## Execucio
 
 ### Linux
 ```bash
@@ -100,9 +100,9 @@ Cada experiment inclou:
 - **Warm-up**: 5 execucions prèvies consecutives amb el mateix input per estabilitzar temperatura/caches
 - **Cooldown**: 60 segons entre execucions
 
-## MÃ¨triques recollides
+## Metriques recollides
 
-Cada execuciÃ³ registra:
+Cada execucio registra:
 
 
 - `wall_ms`: Temps real (wall-clock)
@@ -114,10 +114,10 @@ Cada execuciÃ³ registra:
 - `temp_c`: Temperatura instantània reportada pel sensor (Windows WMI / `sensors` a Linux)
 
 Metadades:
-- `compiler`: VersiÃ³ del compilador
-- `flags`: Flags de compilaciÃ³
-- `os_name`: Nom i versiÃ³ del SO
-- `kernel`: VersiÃ³ del kernel (Linux) o build (Windows)
+- `compiler`: Versio del compilador
+- `flags`: Flags de compilacio
+- `os_name`: Nom i versio del SO
+- `kernel`: Versio del kernel (Linux) o build (Windows)
 - `timestamp`: Marca temporal ISO-8601
 
 ## Afegir nous algorismes
@@ -144,7 +144,7 @@ int main(int argc, char** argv) {
 
   BenchTimer T; T.start();
   
-  // EL TEU ALGORISME AQUÃ
+  // EL TEU ALGORISME AQUi
   
   T.stop(R);
   print_json(R);
@@ -175,27 +175,27 @@ endif()
 
 4. Recompila i executa
 
-## FusiÃ³ de resultats
+## Fusio de resultats
 
 Per combinar resultats de Linux i Windows:
 
 ```bash
 # Linux
 cat runs/linux_*/data_linux.csv runs/windows_*/data_windows.csv > runs/all_data.csv
-# Elimina duplicats de capÃ§alera si cal
+# Elimina duplicats de capcalera si cal
 ```
 
 ## Notes importants
 
-- Executa amb la mÃ quina connectada a AC power
+- Executa amb la maquina connectada a AC power
 - Minimitza processos en background
 - Linux: considera usar `cpupower frequency-set -g performance`
-- Les flags de compilaciÃ³ han de ser idÃ¨ntiques als dos OS
-- Usa el mateix GCC major version si Ã©s possible
+- Les flags de compilacio han de ser identiques als dos OS
+- Usa el mateix GCC major version si es possible
 
-## DetecciÃ³ d'outliers
+## Deteccio d'outliers
 
-Per detectar i filtrar outliers (sugerÃ¨ncia):
+Per detectar i filtrar outliers (sugerencia):
 
 ```python
 import pandas as pd
